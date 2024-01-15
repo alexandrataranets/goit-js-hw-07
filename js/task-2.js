@@ -1,20 +1,4 @@
-// const galleryList = document.querySelector(".gallery");
-// const images = [
-//   // ... (as provided in the task)
-// ];
-
-// const createGalleryItem = (image) => {
-//   const listItem = document.createElement("li");
-//   const imageElement = document.createElement("img");
-//   imageElement.src = image.url;
-//   imageElement.alt = image.alt;
-//   listItem.appendChild(imageElement);
-//   return listItem;
-// };
-
-// const galleryItems = images.map(createGalleryItem);
-// galleryList.append(...galleryItems);
-
+const galleryList = document.querySelector(".gallery");
 const images = [
   {
     url: 'https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
@@ -44,3 +28,15 @@ const images = [
     alt: 'Zebras on Zebra',
   },
 ];
+
+const createGalleryItem = (image) => {
+  const listItem = document.createElement("li");
+  const imageElement = document.createElement("img");
+  imageElement.src = image.url;
+  imageElement.alt = image.alt;
+  listItem.appendChild(imageElement);
+  return listItem;
+};
+
+const galleryItems = images.map(createGalleryItem);
+galleryList.append(...galleryItems);
