@@ -20,8 +20,7 @@ body {
     background: #FFF;
 }
 .item {
-    /* height: 232px; */
-    /* width: 360px; */
+    width: 392px;
     display: flex;
     padding: 16px;
     flex-direction: column;
@@ -31,6 +30,16 @@ body {
     background: #F6F6FE;
     margin-bottom: 24px;
 
+}
+.animals {
+    height: 264px;
+}
+
+.products {
+    height: 216px;
+}
+.technologies {
+    height: 312px;
 }
 li {
     list-style-type: none;
@@ -42,6 +51,9 @@ li {
     border-radius: 4px;
     border: 1px solid #808080;
     margin-bottom: 8px;
+    padding-left: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 ul {
     margin-left: 0;
@@ -120,7 +132,69 @@ p {
     width: 169px;
     height: 24px;
 }
+ 
+/* task 3 */
+.input-anonymous {
+    width: 360px;
+height: 40px;
+flex-shrink: 0;
+border-radius: 4px;
+border: 1px solid #808080;
+margin-top: 24px;
+padding-left: 16px;
+}
 
+placeholder{
+    color: #2E2F42;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5em; /* 150% */
+    letter-spacing: 0.64px;  
+}
+
+/* task 4 */
+
+.input-box{
+display: flex;
+flex-direction: column;
+position: relative;
+padding-bottom: 8px;
+}
+.input-log {
+    width: 360px;
+height: 40px;
+flex-shrink: 0;
+border-radius: 4px;
+border: 1px solid #808080;
+}
+.name {
+    color: #2E2F42;
+font-size: 16px;
+font-weight: 400;
+line-height: 1.5em; /* 150% */
+letter-spacing: 0.64px;
+    padding-bottom: 8px;
+}
+
+.login{
+    display: flex;
+padding: 8px 16px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 8px;
+border: none;
+background: #4E75FF;
+color: #FFF;
+font-size: 16px;
+font-weight: 500;
+line-height: 1.5em; /* 150% */
+letter-spacing: 0.64px;
+margin-top: 8px;
+}
+
+/* task 6 */
 .c {
     display: inline-flex;
     padding: 24px;
@@ -131,19 +205,22 @@ p {
 }
 
 .box {
+    width: 486px;
+    height: 104px;
     display: flex;
     padding: 32px;
     align-items: flex-start;
     gap: 16px;
     border-radius: 8px;
     background: #F6F6FE;
+    margin-bottom: 16px;
 }
 
-.input{
+.input-chek{
     width: 150px;
     height: 40px;
 display: flex;
-padding: 8px 72px;
+padding-left: 72px;
 flex-direction: column;
 justify-content: center;
 align-items: center;
@@ -185,4 +262,14 @@ font-style: normal;
 font-weight: 500;
 line-height: 1.5em; /* 150% */
 letter-spacing: 0.64px;
+}
+.boxes{
+    display: flex;
+    width: 486px;
+    padding: 32px;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 8px;
+background: #F6F6FE;
 }
